@@ -1,7 +1,6 @@
 import unittest
 
-def tokenize(string: str) -> []:
-    return "".join([x for x in string.lower() if x in '\n\t abcdefghijklmnopqrstuvwxyz0123456789']).split()
+# lambda string: "".join([x for x in string.lower() if x in '\n\t abcdefghijklmnopqrstuvwxyz0123456789']).split()
 
 class TestTokenizeFunction(unittest.TestCase):
     
