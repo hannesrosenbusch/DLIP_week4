@@ -5,8 +5,14 @@ import numpy as np
 # Don't import additional packages. Numpy suffices.
 
 # [A] List Comprehensions and String Manipulation: Tokenization
-# Objective: Practice list comprehensions and basic string operations: split a sentence into individual 
-# words and use list comprehensions to make the code cleaner and more readable.
+#     Objective: Practice list comprehensions and basic string operations: split a sentence 
+#                into individual words and use list comprehensions to make the code cleaner 
+#                and more readable.
+
+# List comprehension provides a concise way to create lists by embedding a for-loop inside 
+# square brackets.
+# Syntax: [expression for item in iterable if condition] (condition is optional).
+# Example: squares = [x**2 for x in range(10) if x % 2 == 0]
 
 # Large language models work with "tokens," which are the basic units of text (often words or subwords). 
 # Tokenization is the process of breaking down sentences into these tokens. In this exercise, you’ll 
@@ -47,7 +53,11 @@ def tokenize(string: str) -> list:
 
 
 # [B] Dictionary Comprehensions: Frequency Count of Tokens
-# Objective: Practice dictionary comprehensions for token frequency counts.
+#     Objective: Practice dictionary comprehensions for token frequency counts.
+
+# Dictionary comprehension is a concise way to create dictionaries using a for-loop inside curly braces.
+# Syntax: {key: value for item in iterable if condition} (condition is optional).
+# Example: char_count = {char: ord(char) for char in "hello" if char != 'e'}
 
 # Once tokens are extracted, a common task in NLP is to count how often each word appears. 
 # This is called calculating the frequency of tokens, and it’s useful because words that appear 
@@ -91,9 +101,8 @@ all(text_hist[key] == value for key, value in token_counts(text).items())
 
 
 # [C] Sets & Dictionary comprehension: Mapping unique tokens to numbers and vice versa
-
-# Objective: Learn dictionary comprehensions and create mappings from tokens to unique 
-# numerical IDs and back.
+#   Objective: Practice dictionary comprehensions and create mappings from tokens to unique 
+#              numerical IDs and back.
 
 # Once tokens are created, they often need to be converted to numerical representations 
 # for use in models. Two essential mappings are:
