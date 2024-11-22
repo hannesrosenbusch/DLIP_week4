@@ -22,7 +22,7 @@ Use the functions on test cases to see whether you have errors.
 You can also preview our test cases by running this command in the terminal 
  ```bash
  pip install pytest
- pytest grade_task1.py
+ pytest grade_task2.py
  ```
 Notice that you shouldn't edit the grading files.
 
