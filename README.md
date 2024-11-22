@@ -27,7 +27,7 @@ You can also preview our test cases by running this command in the terminal
 Notice that you shouldn't edit the grading files.
 
 ## Step 4:
-Add this week's kaggle certificate to the repository ([https://www.kaggle.com/learn/nlp](https://www.kaggle.com/code/datasniffer/natural-language-processing-with-keras-tensorflow)). Name the file `certificate.pdf`. This is not part of the grader but somewhat encouraged. It may be that no certificate is issued, in which case you can skip this part, but do submit the URL to your last notebook of this series on Canvas.
+Add this week's kaggle notebook (there is no certificate) to the repository ([https://www.kaggle.com/learn/nlp](https://www.kaggle.com/code/datasniffer/natural-language-processing-with-keras-tensorflow)). This is not part of the grader but somewhat encouraged. It may be that no certificate is issued, in which case you can skip this part, but do submit the URL to your last notebook of this series on Canvas.
 
 ## Step 5: 
 Push your changes to the repo back to github. The grading will occur automatically but might take a minute. Click the button Actions, atop the page, and select your latest commit, to see the Autograder outcomes.
