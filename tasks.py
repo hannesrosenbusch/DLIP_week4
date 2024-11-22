@@ -89,7 +89,7 @@ print(word_frequencies)
 
 # Your code here:
 # -----------------------------------------------
-def token_counts(string: str, k: int) -> dict:
+def token_counts(string: str, k: int = 1) -> dict:
     pass # Your code
 
 # test:
@@ -154,22 +154,32 @@ assert all(id_to_token[token_to_id[key]]==key for key in token_to_id) and all(to
 # Your code here:
 # -----------------------------------------------
 def make_vocabulary_map(documents: list) -> tuple:
+    # Hint: use your tokenize function
     pass # Your code
 
-
+# Test
+t2i, i2t = make_vocabulary_map([text])
+all(i2t[t2i[tok]] == tok for tok in t2i) # should be True
 # -----------------------------------------------
 
 
 
 # Task 8: Define a function that will take in a list of strings ('documents') and a vocabulary
 #   dictionary token_to_id, that tokenizes each string in the list and returns a list with
-#   each string converted into a list of token ID's
+#   each string converted into a list of token ID's. For example:
+#   ['Good day!', 'What a day'] -> [[0, 1], [2, 3, 1]]
+#   The function should return three values: the list of encoded sentences, the token_to_id,
+#   and the id_to_token dictionaries.
 
 # Your code here:
 # -----------------------------------------------
 def tokenize_and_encode(documents: list) -> list:
+    # Hint: use your make_vocabulary_map and tokenize function
     pass # Your code
 
+# Test:
+enc, t2i, i2t = tokenize_and_encode([text, 'What a luck we had today!'])
+" | ".join([" ".join(i2t[i] for i in e) for e in enc]) == 'the quick brown fox jumps over the lazy dog | what a luck we had today'
 # -----------------------------------------------
 
 
