@@ -331,8 +331,8 @@ o.size == 1 and o.round(3) == 17794.733
 from statsmodels.datasets import macrodata
 
 data = macrodata.load_pandas().data
-X = np.hstack([np.ones((len(macro),1)), data[['cpi','unemp']].values]) # Features: CPI and unemployment
-y = macro['infl'].values # Target: inflation
+X = np.hstack([np.ones((len(data),1)), data[['cpi','unemp']].values]) # Features: CPI and unemployment
+y = data['infl'].values # Target: inflation
 
 # Next we want to prepare a dataset for training sequence-based models like RNNs. We create 
 # input-output pairs where each input is a sequence of seq_len time steps from X, and the output 
