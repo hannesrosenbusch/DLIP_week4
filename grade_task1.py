@@ -1,4 +1,5 @@
 import unittest
+from tasks import *
 
 # lambda string: "".join([x for x in string.lower() if x in '\n\t abcdefghijklmnopqrstuvwxyz0123456789']).split()
 
