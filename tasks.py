@@ -115,7 +115,7 @@ all(text_hist[key] == value for key, value in token_counts(text).items())
 
 
 
-# Task 5: Given a list of unique tokens from Exercise 1, construct two dictionaries:
+# Task 5: Given a list of tokens from Exercise 1, construct two dictionaries:
 #   `token_to_id`: a dictionary that maps each token to a unique integer ID.
 #   `id_to_token`: a dictionary that maps each unique integer ID back to the original token.
 
