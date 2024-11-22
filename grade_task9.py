@@ -1,4 +1,4 @@
-from task import *
+from tasks import *
 import numpy as np
 
 def test_sigmoid():
