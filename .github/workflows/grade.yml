@@ -27,6 +27,8 @@ jobs:
       - name: Grade Task 2
         id: task2
         continue-on-error: true
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: python tests/grade_task2.py
 
       - name: Grade Task 4

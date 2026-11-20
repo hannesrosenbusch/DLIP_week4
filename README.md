@@ -31,7 +31,7 @@ You can also run all grading tests locally from the repository root:
 python3 -m pip install numpy pytest
 
 # Run the Task 2 unittest checks
-python3 tests/grade_task2.py
+PYTHONPATH=. python3 tests/grade_task2.py
 
 # Run the remaining grading checks
 python3 -m pytest tests/grade_task4.py tests/grade_task7.py tests/grade_task8.py tests/grade_task9.py
